@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+      FILE *fp;
+      char ch;
+      int i;
+    
+	fp=fopen("newfile.text","r");
+	
+    if(fp==NULL)
+    {
+      printf("MY Captin");
+    }
+    for(i=0;i<5;i++)
+	{
+		ch = getc(fp);
+		printf("%c",ch);
+   	}
+	fclose(fp);
+}
